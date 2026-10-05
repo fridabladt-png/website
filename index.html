@@ -1,287 +1,230 @@
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prismen - Dorte Bladt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-html {
-    scroll-behavior: smooth;
-}
+<body>
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background: #f4f0eb;
-    line-height: 1.7;
-}
+    <header>
+        <nav>
+            <a href="#" class="logo">Prismen</a>
 
+            <div class="links">
+                <a href="#om">Om</a>
+                <a href="#tilbyder">Jeg tilbyder</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </nav>
+    </header>
 
-/* --------------------
-   HEADER
--------------------- */
+    <main>
 
-header {
-    background: #f4f0eb;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #ddd6cf;
-}
+        <section class="hero">
+            <p class="eyebrow">Velkommen til</p>
 
-nav {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 22px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            <h1>Prismen</h1>
 
-.logo {
-    font-size: 26px;
-    font-weight: normal;
-    color: #333;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
+            <p>
+                Mit navn er Dorte og jeg har stor faglig erfaring og personlig
+                nysgerrighed på flere temaer indenfor mental sundhed og
+                fællesskaber.
+            </p>
 
-.links {
-    display: flex;
-    gap: 35px;
-}
+            <p>
+                Tag fat i mig og vi kan sammen bygge noget op der passer ind
+                i jeres fællesskab.
+            </p>
 
-.links a {
-    color: #333;
-    text-decoration: none;
-    font-size: 15px;
-}
+            <p>
+                Min metode er en vekslen mellem oplæg og inddragelse af
+                deltagernes oplevelser og perspektiver.
+            </p>
 
-.links a:hover {
-    text-decoration: underline;
-}
+            <a href="mailto:dortebladt@gmail.com" class="button">
+                Send besked
+            </a>
+        </section>
 
 
-/* --------------------
-   GENERAL LAYOUT
--------------------- */
+        <section id="om">
 
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-}
+            <h2>Om mig</h2>
 
-section {
-    padding: 100px 60px;
-    margin: 0;
-}
+            <p>
+                Jeg er sundhedskonsulent i Vejle Kommune med et stærkt engagement
+                i folkesundhed, fællesskab og frivillighed. Jeg brænder for at
+                omsætte idéer til konkrete initiativer, der gør en forskel for
+                mennesker i hverdagen.
+            </p>
 
-section:not(.hero) {
-    border-top: 1px solid #ddd6cf;
-}
+            <p>
+                Jeg tror på, at de bedste løsninger skabes i fællesskab, og at
+                stærke relationer og gode samarbejder er afgørende for at få ting
+                til at ske.
+            </p>
 
-h1,
-h2,
-h3 {
-    font-weight: normal;
-}
+            <p>
+                Jeg trives med at samle mennesker omkring en fælles sag, skabe
+                engagement og bygge bro mellem kommune, foreninger, frivillige
+                og lokale aktører.
+            </p>
 
-h1 {
-    font-size: 72px;
-    line-height: 1.05;
-    margin: 15px 0 30px;
-    letter-spacing: -1px;
-}
-
-h2 {
-    font-size: 42px;
-    line-height: 1.2;
-    margin: 0 0 40px;
-}
-
-h3 {
-    font-size: 27px;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-p {
-    max-width: 720px;
-}
+        </section>
 
 
-/* --------------------
-   FORSIDE
--------------------- */
+        <section id="tilbyder">
 
-.hero {
-    min-height: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 60px;
-}
+            <h2>Jeg tilbyder</h2>
 
-.eyebrow {
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
+            <article class="course">
 
-.hero p {
-    font-size: 18px;
-    max-width: 700px;
-}
+                <h3>— Er ensomhed et tabu?</h3>
 
+                <p class="course-type">Kursus / Undervisning</p>
 
-/* --------------------
-   OM MIG
--------------------- */
+                <p class="course-time">TID: 1,5 time til 3 timer</p>
 
-#om {
-    padding-left: 60px;
-    padding-right: 60px;
-}
+                <p>
+                    Hvordan oplever vi ensomhed som individer, og hvordan
+                    betragter vi ensomhed som samfund? Dette kursus fokuserer
+                    på at give redskaber til at forstå, hvad ensomhed er, og
+                    hvorfor det er vigtigt at investere tid og ressourcer i
+                    at forebygge det.
+                </p>
 
+                <p>
+                    Kurset giver indsigt i, hvordan vi kan håndtere både vores
+                    egen og række ud mod andre der oplever ensomhed.
+                    Kurset tilbyder viden samt konkrete strategier til at
+                    forebygge ensomhed og styrke fællesskaber.
+                </p>
 
-/* --------------------
-   JEG TILBYDER
--------------------- */
+                <p>
+                    Kurset er rettet mod foreninger, organisationer og
+                    kommuner, der ønsker at fremme mental trivsel, styrke
+                    fællesskaber og forebygge ensomhed.
+                </p>
 
-#tilbyder {
-    padding-left: 60px;
-    padding-right: 60px;
-    border-top: 1px solid #ddd6cf;
-}
+                <p>
+                    Kurset kombinerer oplæg med fælles og individuel
+                    refleksion.
+                </p>
 
-.course {
-    max-width: 800px;
-    margin-bottom: 75px;
-}
+                <p>
+                    Det bliver planlagt efter deltagernes behov og ønsker.
+                </p>
 
-.course:last-child {
-    margin-bottom: 0;
-}
-
-.course-type {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin: 0 0 5px;
-}
-
-.course-time {
-    font-size: 14px;
-    margin: 0 0 25px;
-    color: #666;
-}
+            </article>
 
 
-/* --------------------
-   KNAP
--------------------- */
+            <article class="course">
 
-.button {
-    display: inline-block;
-    width: fit-content;
-    margin-top: 25px;
-    padding: 13px 28px;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-}
+                <h3>— Ensomhed: viden, holdning og handling</h3>
 
-.button:hover {
-    opacity: 0.75;
-}
+                <p class="course-type">Kursus / Undervisning</p>
 
+                <p class="course-time">TID: 1,5 time til 3 timer</p>
 
-/* --------------------
-   LINKS
--------------------- */
+                <p>
+                    Basis forløb om ensomhed til fagprofessionelle og
+                    studerende som arbejder med ensomhed eller er nysgerrige
+                    på området.
+                </p>
 
-a {
-    color: inherit;
-}
+                <p>
+                    Kurset kombinerer oplæg med fælles og individuel
+                    refleksion.
+                </p>
 
-#kontakt a {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
+                <p>
+                    Det bliver planlagt efter deltagernes behov og ønsker.
+                </p>
+
+            </article>
 
 
-/* --------------------
-   FOOTER
--------------------- */
+            <article class="course">
 
-footer {
-    padding: 45px 30px;
-    text-align: center;
-    border-top: 1px solid #ddd6cf;
-    font-size: 14px;
-}
+                <h3>— Ensomhed: viden, holdning og handling i samarbejdet</h3>
+
+                <p class="course-type">Kursus / Undervisning</p>
+
+                <p class="course-time">TID: 1,5 time til 3 timer</p>
+
+                <p>
+                    Basis forløb om ensomhed til frivillige som arbejder med
+                    ensomhed eller er nysgerrige på området.
+                </p>
+
+                <p>
+                    Kurset kombinerer oplæg med fælles og individuel
+                    refleksion.
+                </p>
+
+                <p>
+                    Det bliver planlagt efter deltagernes behov og ønsker.
+                </p>
+
+            </article>
 
 
-/* --------------------
-   MOBIL
--------------------- */
+            <article class="course">
 
-@media (max-width: 700px) {
+                <h3>— Livshistorie fortælling</h3>
 
-    header {
-        position: relative;
-    }
+                <p class="course-type">Kursus / Undervisning</p>
 
-    nav {
-        padding: 20px 25px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+                <p class="course-time">TID: 1,5 time til 3 timer</p>
 
-    .links {
-        width: 100%;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+                <p>
+                    Hvad kan jeg lære af min egen og andres livshistorie
+                    fortælling? Hvordan kan man helt praktisk dele min historie
+                    med andre?
+                </p>
 
-    .links a {
-        font-size: 14px;
-    }
+                <p>
+                    Kurset giver konkrete redskaber og inspiration til at
+                    fortælle sin livshistorie.
+                </p>
 
-    section {
-        padding: 70px 25px;
-    }
+                <p>
+                    Der er en vekslen mellem oplæg og fælles og individuel
+                    refleksion.
+                </p>
 
-    #om,
-    #tilbyder {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+            </article>
 
-    .hero {
-        min-height: 600px;
-        padding: 70px 25px;
-    }
+        </section>
 
-    h1 {
-        font-size: 48px;
-    }
 
-    h2 {
-        font-size: 34px;
-        margin-bottom: 30px;
-    }
+        <section id="kontakt">
 
-    h3 {
-        font-size: 24px;
-    }
+            <h2>Kontakt mig</h2>
 
-    .hero p {
-        font-size: 17px;
-    }
+            <p><strong>Dorte Bladt</strong></p>
 
-    .course {
-        margin-bottom: 60px;
-    }
-}
+            <p>
+                <a href="tel:23722908">23 72 29 08</a>
+            </p>
+
+            <p>
+                <a href="mailto:dortebladt@gmail.com">
+                    dortebladt@gmail.com
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Alle rettigheder forbeholdes
+    </footer>
+
+</body>
+</html>
