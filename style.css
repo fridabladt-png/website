@@ -114,10 +114,15 @@ p {
 
 .hero {
     min-height: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 70px;
+    align-items: center;
     padding: 100px 60px;
+}
+
+.hero-text {
+    max-width: 600px;
 }
 
 .eyebrow {
@@ -129,7 +134,20 @@ p {
 
 .hero p {
     font-size: 18px;
-    max-width: 700px;
+    max-width: 600px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
 }
 
 
@@ -138,8 +156,26 @@ p {
 -------------------- */
 
 #om {
-    padding-left: 60px;
-    padding-right: 60px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 620px;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 
@@ -150,8 +186,43 @@ p {
 #tilbyder {
     padding-left: 60px;
     padding-right: 60px;
-    border-top: 1px solid #ddd6cf;
 }
+
+.section-intro {
+    font-size: 18px;
+    max-width: 700px;
+    margin-top: -15px;
+    margin-bottom: 55px;
+}
+
+
+/* --------------------
+   BILLEDER VED KURSER
+-------------------- */
+
+.offer-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 90px;
+}
+
+.offer-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* --------------------
+   KURSER
+-------------------- */
 
 .course {
     max-width: 800px;
@@ -253,16 +324,32 @@ footer {
         padding: 70px 25px;
     }
 
-    #om,
-    #tilbyder {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+
+    /* Forside */
 
     .hero {
-        min-height: 600px;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: stretch;
         padding: 70px 25px;
     }
+
+    .hero-text {
+        max-width: none;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 360px;
+    }
+
+
+    /* Generelle overskrifter */
 
     h1 {
         font-size: 48px;
@@ -280,6 +367,54 @@ footer {
     .hero p {
         font-size: 17px;
     }
+
+
+    /* Om mig */
+
+    #om {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: stretch;
+    }
+
+    .about-text {
+        max-width: none;
+    }
+
+    .about-image img {
+        height: auto;
+        max-height: 550px;
+        object-fit: cover;
+    }
+
+
+    /* Jeg tilbyder */
+
+    #tilbyder {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section-intro {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .offer-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 65px;
+    }
+
+    .offer-image img {
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+
+    /* Kurser */
 
     .course {
         margin-bottom: 60px;
