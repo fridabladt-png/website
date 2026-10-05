@@ -71,7 +71,6 @@ main {
 
 section {
     padding: 100px 60px;
-    margin: 0;
 }
 
 section:not(.hero) {
@@ -94,7 +93,7 @@ h1 {
 h2 {
     font-size: 42px;
     line-height: 1.2;
-    margin: 0 0 40px;
+    margin: 0 0 35px;
 }
 
 h3 {
@@ -113,12 +112,13 @@ p {
 -------------------- */
 
 .hero {
-    min-height: 750px;
+    min-height: 650px;
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    gap: 70px;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 80px;
     align-items: center;
-    padding: 100px 60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .hero-text {
@@ -127,13 +127,13 @@ p {
 
 .eyebrow {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 17px;
     max-width: 600px;
 }
 
@@ -145,9 +145,9 @@ p {
 
 .hero-image img {
     width: 100%;
-    max-width: 430px;
-    height: auto;
+    max-width: 390px;
     display: block;
+    border-radius: 18px;
 }
 
 
@@ -157,8 +157,8 @@ p {
 
 #om {
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    gap: 80px;
+    grid-template-columns: 1fr 0.72fr;
+    gap: 90px;
     align-items: center;
 }
 
@@ -172,10 +172,11 @@ p {
 
 .about-image img {
     width: 100%;
-    height: 560px;
+    height: 520px;
     object-fit: cover;
     object-position: center;
     display: block;
+    border-radius: 18px;
 }
 
 
@@ -191,32 +192,22 @@ p {
 .section-intro {
     font-size: 18px;
     max-width: 700px;
-    margin-top: -15px;
-    margin-bottom: 55px;
-}
-
-
-/* --------------------
-   BILLEDER VED KURSER
--------------------- */
-
-.offer-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin-bottom: 90px;
+    margin-top: -10px;
+    margin-bottom: 50px;
 }
 
 .offer-image {
-    width: 100%;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 0 80px;
 }
 
 .offer-image img {
     width: 100%;
-    height: 300px;
+    height: 330px;
     object-fit: cover;
+    object-position: center;
     display: block;
+    border-radius: 18px;
 }
 
 
@@ -259,6 +250,7 @@ p {
     background: #333;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
     transition: opacity 0.2s ease;
 }
 
@@ -320,6 +312,9 @@ footer {
         font-size: 14px;
     }
 
+
+    /* Sektioner */
+
     section {
         padding: 70px 25px;
     }
@@ -331,9 +326,10 @@ footer {
         min-height: auto;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 45px;
         align-items: stretch;
-        padding: 70px 25px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .hero-text {
@@ -345,11 +341,12 @@ footer {
     }
 
     .hero-image img {
-        max-width: 360px;
+        max-width: 340px;
+        border-radius: 16px;
     }
 
 
-    /* Generelle overskrifter */
+    /* Overskrifter */
 
     h1 {
         font-size: 48px;
@@ -375,7 +372,6 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 45px;
-        align-items: stretch;
     }
 
     .about-text {
@@ -384,8 +380,8 @@ footer {
 
     .about-image img {
         height: auto;
-        max-height: 550px;
-        object-fit: cover;
+        max-height: 520px;
+        border-radius: 16px;
     }
 
 
@@ -401,16 +397,14 @@ footer {
         margin-bottom: 40px;
     }
 
-    .offer-images {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-bottom: 65px;
+    .offer-image {
+        margin-bottom: 60px;
     }
 
     .offer-image img {
         height: auto;
         max-height: 350px;
-        object-fit: cover;
+        border-radius: 16px;
     }
 
 
